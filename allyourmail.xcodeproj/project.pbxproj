@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		827A6B7219D1EF890045412B /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A6B7119D1EF890045412B /* AppDependencies.swift */; };
+		827A6B7519D1F0120045412B /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A6B7419D1F0120045412B /* RootWireframe.swift */; };
+		827A6B7819D1F04C0045412B /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A6B7719D1F04C0045412B /* CoreDataStore.swift */; };
+		827A6B7B19D1F0760045412B /* allyourmail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 827A6B7919D1F0760045412B /* allyourmail.xcdatamodeld */; };
+		827A6B7E19D1F09A0045412B /* ManagedMailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A6B7D19D1F09A0045412B /* ManagedMailItem.swift */; };
+		827A6B8119D1F0F10045412B /* MailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A6B8019D1F0F10045412B /* MailItem.swift */; };
 		828CF95A19D1E41D00B6740D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828CF95919D1E41D00B6740D /* AppDelegate.swift */; };
 		828CF95C19D1E41D00B6740D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828CF95B19D1E41D00B6740D /* FirstViewController.swift */; };
 		828CF95E19D1E41D00B6740D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828CF95D19D1E41D00B6740D /* SecondViewController.swift */; };
@@ -14,6 +20,20 @@
 		828CF96319D1E41D00B6740D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 828CF96219D1E41D00B6740D /* Images.xcassets */; };
 		828CF96619D1E41D00B6740D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 828CF96419D1E41D00B6740D /* LaunchScreen.xib */; };
 		828CF97219D1E41D00B6740D /* allyourmailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828CF97119D1E41D00B6740D /* allyourmailTests.swift */; };
+		82919B4819D1FBB70082D63D /* InboxModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B4719D1FBB70082D63D /* InboxModuleInterface.swift */; };
+		82919B4D19D1FC090082D63D /* InboxWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B4C19D1FC090082D63D /* InboxWireframe.swift */; };
+		82919B4F19D1FC240082D63D /* InboxViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B4E19D1FC240082D63D /* InboxViewInterface.swift */; };
+		82919B5119D1FC320082D63D /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B5019D1FC320082D63D /* InboxViewController.swift */; };
+		82919B5319D1FC6C0082D63D /* InboxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B5219D1FC6C0082D63D /* InboxPresenter.swift */; };
+		82919B5519D1FC8C0082D63D /* InboxDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B5419D1FC8C0082D63D /* InboxDisplayData.swift */; };
+		82919B5719D1FCA00082D63D /* InboxDisplayDataCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B5619D1FCA00082D63D /* InboxDisplayDataCollection.swift */; };
+		82919B5919D1FCAB0082D63D /* InboxDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B5819D1FCAB0082D63D /* InboxDisplayItem.swift */; };
+		82919B5B19D1FCB70082D63D /* InboxDisplaySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B5A19D1FCB70082D63D /* InboxDisplaySection.swift */; };
+		82919B6019D1FCE90082D63D /* InboxDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B5F19D1FCE90082D63D /* InboxDataManager.swift */; };
+		82919B6219D1FCF90082D63D /* InboxInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B6119D1FCF90082D63D /* InboxInteractor.swift */; };
+		82919B6419D1FD070082D63D /* InboxInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B6319D1FD070082D63D /* InboxInteractorIO.swift */; };
+		82919B6619D1FD230082D63D /* InboxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B6519D1FD230082D63D /* InboxItem.swift */; };
+		82919B6819D213490082D63D /* CopyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82919B6719D213490082D63D /* CopyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		827A6B6319D1EDA40045412B /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		827A6B6419D1EDA40045412B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		827A6B7119D1EF890045412B /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDependencies.swift; path = allyourmail/AppDependencies.swift; sourceTree = "<group>"; };
+		827A6B7419D1F0120045412B /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = allyourmail/RootWireframe.swift; sourceTree = "<group>"; };
+		827A6B7719D1F04C0045412B /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStore.swift; path = allyourmail/CoreDataStore.swift; sourceTree = "<group>"; };
+		827A6B7A19D1F0760045412B /* allyourmail.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = allyourmail.xcdatamodel; sourceTree = "<group>"; };
+		827A6B7D19D1F09A0045412B /* ManagedMailItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManagedMailItem.swift; path = allyourmail/ManagedMailItem.swift; sourceTree = "<group>"; };
+		827A6B8019D1F0F10045412B /* MailItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MailItem.swift; path = allyourmail/MailItem.swift; sourceTree = "<group>"; };
 		828CF95419D1E41D00B6740D /* allyourmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = allyourmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		828CF95819D1E41D00B6740D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		828CF95919D1E41D00B6740D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		828CF95919D1E41D00B6740D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = allyourmail/AppDelegate.swift; sourceTree = "<group>"; };
 		828CF95B19D1E41D00B6740D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		828CF95D19D1E41D00B6740D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		828CF96019D1E41D00B6740D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +66,20 @@
 		828CF96B19D1E41D00B6740D /* allyourmailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = allyourmailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		828CF97019D1E41D00B6740D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		828CF97119D1E41D00B6740D /* allyourmailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allyourmailTests.swift; sourceTree = "<group>"; };
+		82919B4719D1FBB70082D63D /* InboxModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxModuleInterface.swift; path = allyourmail/InboxModuleInterface.swift; sourceTree = "<group>"; };
+		82919B4C19D1FC090082D63D /* InboxWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxWireframe.swift; path = allyourmail/InboxWireframe.swift; sourceTree = "<group>"; };
+		82919B4E19D1FC240082D63D /* InboxViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxViewInterface.swift; path = allyourmail/InboxViewInterface.swift; sourceTree = "<group>"; };
+		82919B5019D1FC320082D63D /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxViewController.swift; path = allyourmail/InboxViewController.swift; sourceTree = "<group>"; };
+		82919B5219D1FC6C0082D63D /* InboxPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxPresenter.swift; path = allyourmail/InboxPresenter.swift; sourceTree = "<group>"; };
+		82919B5419D1FC8C0082D63D /* InboxDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxDisplayData.swift; path = allyourmail/InboxDisplayData.swift; sourceTree = "<group>"; };
+		82919B5619D1FCA00082D63D /* InboxDisplayDataCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxDisplayDataCollection.swift; path = allyourmail/InboxDisplayDataCollection.swift; sourceTree = "<group>"; };
+		82919B5819D1FCAB0082D63D /* InboxDisplayItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxDisplayItem.swift; path = allyourmail/InboxDisplayItem.swift; sourceTree = "<group>"; };
+		82919B5A19D1FCB70082D63D /* InboxDisplaySection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxDisplaySection.swift; path = allyourmail/InboxDisplaySection.swift; sourceTree = "<group>"; };
+		82919B5F19D1FCE90082D63D /* InboxDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxDataManager.swift; path = allyourmail/InboxDataManager.swift; sourceTree = "<group>"; };
+		82919B6119D1FCF90082D63D /* InboxInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxInteractor.swift; path = allyourmail/InboxInteractor.swift; sourceTree = "<group>"; };
+		82919B6319D1FD070082D63D /* InboxInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxInteractorIO.swift; path = allyourmail/InboxInteractorIO.swift; sourceTree = "<group>"; };
+		82919B6519D1FD230082D63D /* InboxItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InboxItem.swift; path = allyourmail/InboxItem.swift; sourceTree = "<group>"; };
+		82919B6719D213490082D63D /* CopyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CopyManager.swift; path = allyourmail/CopyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +100,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		827A6B6A19D1EE070045412B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				827A6B6C19D1EEE70045412B /* App Delegate */,
+				827A6B6B19D1EE120045412B /* Common */,
+				827A6B6D19D1EEFB0045412B /* Modules */,
+			);
+			name = Classes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		827A6B6B19D1EE120045412B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				827A6B7F19D1F0DF0045412B /* Model */,
+				827A6B7619D1F0380045412B /* Store */,
+				827A6B7319D1F0040045412B /* View */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		827A6B6C19D1EEE70045412B /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				828CF95919D1E41D00B6740D /* AppDelegate.swift */,
+				827A6B7119D1EF890045412B /* AppDependencies.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		827A6B6D19D1EEFB0045412B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				827A6B6E19D1EF0B0045412B /* Inbox */,
+				827A6B6F19D1EF100045412B /* Collection */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		827A6B6E19D1EF0B0045412B /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				82919B4419D1FB810082D63D /* Application Logic */,
+				82919B4519D1FB880082D63D /* Module Interface */,
+				82919B4619D1FB8F0082D63D /* User Interface */,
+			);
+			name = Inbox;
+			sourceTree = "<group>";
+		};
+		827A6B6F19D1EF100045412B /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Collection;
+			sourceTree = "<group>";
+		};
+		827A6B7019D1EF1E0045412B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				828CF95F19D1E41D00B6740D /* Main.storyboard */,
+				828CF96219D1E41D00B6740D /* Images.xcassets */,
+				828CF96419D1E41D00B6740D /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		827A6B7319D1F0040045412B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				827A6B7419D1F0120045412B /* RootWireframe.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		827A6B7619D1F0380045412B /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				827A6B7C19D1F0840045412B /* Entities */,
+				827A6B7719D1F04C0045412B /* CoreDataStore.swift */,
+				827A6B7919D1F0760045412B /* allyourmail.xcdatamodeld */,
+				82919B6719D213490082D63D /* CopyManager.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		827A6B7C19D1F0840045412B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				827A6B7D19D1F09A0045412B /* ManagedMailItem.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		827A6B7F19D1F0DF0045412B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				827A6B8019D1F0F10045412B /* MailItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		828CF94B19D1E41D00B6740D = {
 			isa = PBXGroup;
 			children = (
+				827A6B6419D1EDA40045412B /* README.md */,
+				827A6B6319D1EDA40045412B /* .travis.yml */,
 				828CF95619D1E41D00B6740D /* allyourmail */,
 				828CF96E19D1E41D00B6740D /* allyourmailTests */,
 				828CF95519D1E41D00B6740D /* Products */,
@@ -79,12 +224,10 @@
 		828CF95619D1E41D00B6740D /* allyourmail */ = {
 			isa = PBXGroup;
 			children = (
-				828CF95919D1E41D00B6740D /* AppDelegate.swift */,
+				827A6B6A19D1EE070045412B /* Classes */,
 				828CF95B19D1E41D00B6740D /* FirstViewController.swift */,
 				828CF95D19D1E41D00B6740D /* SecondViewController.swift */,
-				828CF95F19D1E41D00B6740D /* Main.storyboard */,
-				828CF96219D1E41D00B6740D /* Images.xcassets */,
-				828CF96419D1E41D00B6740D /* LaunchScreen.xib */,
+				827A6B7019D1EF1E0045412B /* Resources */,
 				828CF95719D1E41D00B6740D /* Supporting Files */,
 			);
 			path = allyourmail;
@@ -113,6 +256,88 @@
 				828CF97019D1E41D00B6740D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82919B4419D1FB810082D63D /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				82919B5E19D1FCD00082D63D /* Interactor */,
+				82919B5D19D1FCCC0082D63D /* Manager */,
+				82919B5C19D1FCC80082D63D /* Model */,
+			);
+			name = "Application Logic";
+			sourceTree = "<group>";
+		};
+		82919B4519D1FB880082D63D /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				82919B4719D1FBB70082D63D /* InboxModuleInterface.swift */,
+			);
+			name = "Module Interface";
+			sourceTree = "<group>";
+		};
+		82919B4619D1FB8F0082D63D /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				82919B4919D1FBE50082D63D /* Presenter */,
+				82919B4A19D1FBEA0082D63D /* View */,
+				82919B4B19D1FBED0082D63D /* Wireframe */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		82919B4919D1FBE50082D63D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				82919B5219D1FC6C0082D63D /* InboxPresenter.swift */,
+				82919B5419D1FC8C0082D63D /* InboxDisplayData.swift */,
+				82919B5619D1FCA00082D63D /* InboxDisplayDataCollection.swift */,
+				82919B5A19D1FCB70082D63D /* InboxDisplaySection.swift */,
+				82919B5819D1FCAB0082D63D /* InboxDisplayItem.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		82919B4A19D1FBEA0082D63D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82919B4E19D1FC240082D63D /* InboxViewInterface.swift */,
+				82919B5019D1FC320082D63D /* InboxViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82919B4B19D1FBED0082D63D /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				82919B4C19D1FC090082D63D /* InboxWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		82919B5C19D1FCC80082D63D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82919B6519D1FD230082D63D /* InboxItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		82919B5D19D1FCCC0082D63D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				82919B5F19D1FCE90082D63D /* InboxDataManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		82919B5E19D1FCD00082D63D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				82919B6119D1FCF90082D63D /* InboxInteractor.swift */,
+				82919B6319D1FD070082D63D /* InboxInteractorIO.swift */,
+			);
+			name = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +440,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82919B4819D1FBB70082D63D /* InboxModuleInterface.swift in Sources */,
+				827A6B8119D1F0F10045412B /* MailItem.swift in Sources */,
+				82919B6019D1FCE90082D63D /* InboxDataManager.swift in Sources */,
+				827A6B7819D1F04C0045412B /* CoreDataStore.swift in Sources */,
+				82919B5919D1FCAB0082D63D /* InboxDisplayItem.swift in Sources */,
+				82919B5519D1FC8C0082D63D /* InboxDisplayData.swift in Sources */,
+				82919B5319D1FC6C0082D63D /* InboxPresenter.swift in Sources */,
+				82919B6219D1FCF90082D63D /* InboxInteractor.swift in Sources */,
+				827A6B7519D1F0120045412B /* RootWireframe.swift in Sources */,
+				82919B4D19D1FC090082D63D /* InboxWireframe.swift in Sources */,
+				827A6B7219D1EF890045412B /* AppDependencies.swift in Sources */,
 				828CF95E19D1E41D00B6740D /* SecondViewController.swift in Sources */,
+				82919B5119D1FC320082D63D /* InboxViewController.swift in Sources */,
+				82919B5B19D1FCB70082D63D /* InboxDisplaySection.swift in Sources */,
+				82919B6419D1FD070082D63D /* InboxInteractorIO.swift in Sources */,
+				82919B4F19D1FC240082D63D /* InboxViewInterface.swift in Sources */,
 				828CF95A19D1E41D00B6740D /* AppDelegate.swift in Sources */,
+				82919B6619D1FD230082D63D /* InboxItem.swift in Sources */,
+				82919B6819D213490082D63D /* CopyManager.swift in Sources */,
+				827A6B7B19D1F0760045412B /* allyourmail.xcdatamodeld in Sources */,
 				828CF95C19D1E41D00B6740D /* FirstViewController.swift in Sources */,
+				82919B5719D1FCA00082D63D /* InboxDisplayDataCollection.swift in Sources */,
+				827A6B7E19D1F09A0045412B /* ManagedMailItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +654,7 @@
 				828CF97719D1E41D00B6740D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		828CF97819D1E41D00B6740D /* Build configuration list for PBXNativeTarget "allyourmailTests" */ = {
 			isa = XCConfigurationList;
@@ -417,8 +663,23 @@
 				828CF97A19D1E41D00B6740D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		827A6B7919D1F0760045412B /* allyourmail.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				827A6B7A19D1F0760045412B /* allyourmail.xcdatamodel */,
+			);
+			currentVersion = 827A6B7A19D1F0760045412B /* allyourmail.xcdatamodel */;
+			name = allyourmail.xcdatamodeld;
+			path = allyourmail/allyourmail.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 828CF94C19D1E41D00B6740D /* Project object */;
 }
