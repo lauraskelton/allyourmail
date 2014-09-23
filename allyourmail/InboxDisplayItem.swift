@@ -9,18 +9,20 @@
 import Foundation
 
 struct InboxDisplayItem : Equatable, Printable {
-    let from : String = ""
-    let subject : String = ""
-    let message : String = ""
+    let from : String
+    let subject : String
+    let message : String
+    let dateString : String
 
     var description : String { get {
         return "\(from) -- \(subject)"
         }}
     
-    init(from: String, subject: String, message: String) {
+    init(from: String, subject: String, message: String, dateString: String) {
         self.from = from
         self.subject = subject
         self.message = message
+        self.dateString = dateString
     }
 }
 

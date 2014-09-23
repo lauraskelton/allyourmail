@@ -12,11 +12,13 @@ struct MailItem {
     let from : String
     let subject : String
     let message : String
+    let date : NSDate
     
-    init(from: String, subject: String, message: String) {
+    init(from: String, subject: String, message: String, date: NSDate) {
         self.from = from
         self.subject = subject
         self.message = message
+        self.date = date
     }
 }
 

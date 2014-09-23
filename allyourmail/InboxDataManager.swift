@@ -14,7 +14,8 @@ class InboxDataManager : NSObject {
     func mailItems(completion: (([MailItem]) -> Void)!) {
         
         let predicate = NSPredicate(format: "(from != nil)")
-        let sortDescriptors = []
+        let sortDescriptor = NSSortDescriptor(key: "date", ascending: false)
+        let sortDescriptors = [sortDescriptor]
         
         coreDataStore?.fetchEntriesWithPredicate(predicate,
             sortDescriptors: sortDescriptors,
@@ -28,7 +29,7 @@ class InboxDataManager : NSObject {
         var mailItems : [MailItem] = []
         
         for managedMailItem in entries {
-            let mailItem = MailItem(from: managedMailItem.from, subject: managedMailItem.subject, message: managedMailItem.message)
+            let mailItem = MailItem(from: managedMailItem.from, subject: managedMailItem.subject, message: managedMailItem.message, date: managedMailItem.date)
             mailItems.append(mailItem)
         }
         

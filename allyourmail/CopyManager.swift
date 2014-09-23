@@ -11,11 +11,12 @@ import Foundation
 class CopyManager : NSObject {
     var dataStore : CoreDataStore?
     
-    func saveNewEntry(from: String, subject: String, message: String) {
+    func saveNewEntry(from: String, subject: String, message: String, date: NSDate) {
         let newEntry = dataStore!.newMailItem() as ManagedMailItem
         newEntry.from = from
         newEntry.subject = subject;
         newEntry.message = message;
+        newEntry.date = date;
 
         dataStore?.save()
     }

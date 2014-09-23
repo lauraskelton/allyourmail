@@ -14,5 +14,6 @@ class ManagedMailItem : NSManagedObject {
     @NSManaged var from: String
     @NSManaged var subject: String
     @NSManaged var message: String
+    @NSManaged var date: NSDate
     
 }

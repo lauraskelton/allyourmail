@@ -9,9 +9,13 @@
 import Foundation
 
 class InboxDisplayDataCollection {
+    let dayFormatter = NSDateFormatter()
+    let timeFormatter = NSDateFormatter()
     var sections : Dictionary<String, [InboxDisplayItem]> = Dictionary()
     
     init() {
+        dayFormatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("EEEE", options: 0, locale: NSLocale.autoupdatingCurrentLocale())
+        timeFormatter.dateFormat = NSDateFormatter.dateFormatFromTemplate("h:m a", options: 0, locale: NSLocale.autoupdatingCurrentLocale())
     }
     
     func addInboxItems(inboxItems: [InboxItem]) {
@@ -37,8 +41,17 @@ class InboxDisplayDataCollection {
     }
     
     func displayItemForInboxItem(inboxItem: InboxItem) -> InboxDisplayItem {
-        let displayItem = InboxDisplayItem(from: inboxItem.from, subject: inboxItem.subject, message: inboxItem.message)
+        let dateString = formattedDate(inboxItem.date, isToday: inboxItem.isToday)
+        let displayItem = InboxDisplayItem(from: inboxItem.from, subject: inboxItem.subject, message: inboxItem.message, dateString: dateString)
         return displayItem
+    }
+    
+    func formattedDate(date: NSDate, isToday: Bool) -> String {
+        if isToday {
+            return timeFormatter.stringFromDate(date)
+        }
+        
+        return dayFormatter.stringFromDate(date)
     }
     
     func collectedDisplayData() -> InboxDisplayData {

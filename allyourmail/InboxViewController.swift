@@ -22,6 +22,8 @@ class InboxViewController : UITableViewController, InboxViewInterface {
         super.viewDidLoad()
         
         strongTableView = tableView
+        strongTableView!.registerClass(InboxItemCell.self, forCellReuseIdentifier: InboxEntryCellIdentifier)
+        strongTableView!.registerNib(UINib(nibName: InboxEntryCellIdentifier, bundle: nil), forCellReuseIdentifier: InboxEntryCellIdentifier)
         configureView()
     }
     
@@ -73,12 +75,17 @@ class InboxViewController : UITableViewController, InboxViewInterface {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let inboxSection = dataProperty?.sections[indexPath.section]
-        let inboxItem = inboxSection!.items[indexPath.row]
+        let inboxDisplayItem = inboxSection!.items[indexPath.row]
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(InboxEntryCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(InboxEntryCellIdentifier, forIndexPath: indexPath) as InboxItemCell
         
-        cell.textLabel!.text = inboxItem.from;
-        cell.detailTextLabel!.text = inboxItem.subject;
+        cell.fromLabel!.text = inboxDisplayItem.from
+        cell.dateLabel!.text = inboxDisplayItem.dateString
+        cell.subjectLabel!.text = inboxDisplayItem.subject
+        cell.messageLabel!.text = inboxDisplayItem.message
+        
+        //cell.textLabel!.text = inboxItem.from;
+        //cell.detailTextLabel!.text = inboxItem.dateString;
         //cell.imageView!.image = UIImage(named: inboxSection!.imageName)
         cell.selectionStyle = UITableViewCellSelectionStyle.None;
         

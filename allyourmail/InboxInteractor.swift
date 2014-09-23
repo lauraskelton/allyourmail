@@ -26,11 +26,21 @@ class InboxInteractor : NSObject, InboxInteractorInput {
     }
     
     func inboxItemsFromMailItems(mailItems: [MailItem]) -> [InboxItem] {
+        let calendar = NSCalendar.autoupdatingCurrentCalendar()
+        let flags: NSCalendarUnit = .DayCalendarUnit | .MonthCalendarUnit | .YearCalendarUnit | .EraCalendarUnit
+        var components = calendar.components(flags, fromDate: NSDate())
+        let today = calendar.dateFromComponents(components)
         
         var inboxItems : [InboxItem] = []
         
         for mailItem in mailItems {
-            let inboxItem = InboxItem(from: mailItem.from, subject: mailItem.subject, message: mailItem.message)
+            
+            components = calendar.components(flags, fromDate: mailItem.date)
+            let otherDate = calendar.dateFromComponents(components)
+
+            let isToday = (otherDate == today)
+
+            let inboxItem = InboxItem(from: mailItem.from, subject: mailItem.subject, message: mailItem.message, date: mailItem.date, isToday: isToday)
             inboxItems.insert(inboxItem, atIndex: inboxItems.endIndex)
         }
         

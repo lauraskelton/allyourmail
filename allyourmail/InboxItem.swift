@@ -9,14 +9,18 @@
 import Foundation
 
 struct InboxItem : Equatable {
-    let from : String = ""
-    let subject : String = ""
-    let message : String = ""
+    let from : String
+    let subject : String
+    let message : String
+    let date : NSDate
+    let isToday : Bool
     
-    init(from: String, subject: String, message: String) {
+    init(from: String, subject: String, message: String, date: NSDate, isToday: Bool) {
         self.from = from
         self.subject = subject
         self.message = message
+        self.date = date
+        self.isToday = isToday
     }
 }
 
