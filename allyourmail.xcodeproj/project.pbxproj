@@ -47,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		827A6B6319D1EDA40045412B /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		827A6B6419D1EDA40045412B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		827A6B7119D1EF890045412B /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDependencies.swift; path = allyourmail/AppDependencies.swift; sourceTree = "<group>"; };
 		827A6B7419D1F0120045412B /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = allyourmail/RootWireframe.swift; sourceTree = "<group>"; };
@@ -205,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				827A6B6419D1EDA40045412B /* README.md */,
-				827A6B6319D1EDA40045412B /* .travis.yml */,
 				828CF95619D1E41D00B6740D /* allyourmail */,
 				828CF96E19D1E41D00B6740D /* allyourmailTests */,
 				828CF95519D1E41D00B6740D /* Products */,
